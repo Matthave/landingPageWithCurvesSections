@@ -1,0 +1,85 @@
+.footer{
+  background-color: $dark-font-color;
+  &__title{
+    @include headings;
+    color:$light-font-color;
+    padding: 55px 15px 10px 15px;
+    text-transform: uppercase;
+    font-size: 1.9rem;
+  }
+  &__text{
+    @include defaultText;
+    color:$light-font-color;
+    padding: 10px 15px;
+    font-size: 1.45rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+  &__contact{
+    color:$light-font-color;
+  }
+  &__logoWrap{
+    display: flex;
+    margin: 10px auto 0px 15px;
+  }
+  &__logoText{
+    @include headings;
+    color:$light-font-color;
+    font-size: 3.5rem;
+    margin-left: 7.5px;
+    letter-spacing: 1px;
+  }
+  &__logo{
+    display: block;
+    width: 35px;
+    height: 35px;
+    align-self: center;
+  }
+  &__contactWrap{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 15px;
+  }
+  &__contact{
+    @include defaultText;
+    display: flex;
+    color:$light-font-color;
+    font-size: 1.45rem;
+    flex-basis: 100%;
+    margin: 10px 0px;
+  }
+  &__contactImg{
+    width: 20px;
+    margin-right: 20px;
+    align-self: center;
+  }
+  &__socialMedia{
+    padding: 45px 15px;
+  }
+}
+
+.footer{
+&__form{
+  display: flex;
+  flex-direction: column;
+ }
+ &__input{
+   height: 40px;
+   border-radius: 5px;
+   border:none;
+   margin: 25px 15px 15px 15px;
+ }
+ &__btn{
+   @include pinkBtn;
+   width: 40%;
+   border-radius: 5px;
+   box-shadow: none;
+   margin: 0 15px 80px auto;
+ }
+}
+
+.fab{
+  color:$light-font-color;
+  font-size: 30px;
+  margin-right: 15px;
+}

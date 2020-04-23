@@ -1,0 +1,18 @@
+.nav{
+  display: flex;
+  justify-content: space-between;
+  padding:10px;
+  &__logo{
+    width:125px;
+    align-self: center;
+  }
+  &__btn{
+    background-color: #fff;
+    border:1px solid $primary-pink-color;
+    border-radius: 15px;
+    box-shadow: 0px 0px 1px 0.25px $primary-pink-color;
+    padding: 5px 15px;
+    color: $primary-pink-color;
+    font-size: 1.2rem;
+  }
+}

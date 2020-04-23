@@ -1,0 +1,50 @@
+.growTogether{
+  display: flex;
+  flex-direction: column;
+  background-color: $light-font-color;
+  &:nth-child(2){
+    background-color: #fff;
+    padding: 100px 0px;
+  }
+  &__img{
+    display: block;
+    width:90%;
+    margin: 0px auto;
+    padding-top: 75px;
+    max-width: 600px;
+  }
+  &__title{
+    @include headings;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 100px 0px 20px 0px;
+  }
+  &__text{
+    @include defaultText;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-bottom: 75px;
+    padding: 0px 15px 75px 15px;
+  }
+}
+
+.curves{
+  background-color: #fff;
+  width:100%;
+}
+
+.getStart{
+   padding: 75px 0px 200px 0px;
+   
+  &__title{
+    @include headings;
+    text-align: center;
+    margin: 35px 50px;
+    font-size: 2.5rem;
+  }
+  &__btn{
+   @include pinkBtn;
+   width:60%;
+   margin-bottom: 55px;
+  }
+}

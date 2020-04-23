@@ -1,0 +1,43 @@
+@mixin headings {
+  font-family: $headings-font-family;
+  font-weight: 700;
+  color:$dark-font-color;
+}
+
+@mixin defaultText {
+  font-family: $default-font-family;
+  color:$dark-font-color;
+  line-height: 2.3rem;
+}
+
+@mixin pinkBtn {
+  display: block;
+  width:70%;
+  padding: 10px 0px;
+  border-radius: 50px;
+  border:none;
+  box-shadow: 0px 5px 10px 1px #ddd;
+  background-color: $primary-pink-color;
+  margin: 0 auto;
+  font-family: $default-font-family;
+  font-size: 1.5rem;
+  color:#fff;
+}
+
+$breakpoints: (
+xsmall: (min-width: 460px),
+small: (min-width: 640px),
+medium: (min-width: 800px),
+large: (min-width: 1024px),
+xlarge: (min-width: 1200px),
+xxlarge: (min-width: 1440px),
+);
+
+@mixin mq($breakpoint) {
+  $size: map-get($breakpoints, $breakpoint );
+  @if($size){
+    @media #{$size}{
+    @content
+    }
+  }
+} 

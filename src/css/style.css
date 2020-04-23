@@ -1,1 +1,338 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+html {
+  font-size: 10px;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+}
+
+.nav__logo {
+  width: 125px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.nav__btn {
+  background-color: #fff;
+  border: 1px solid #ff52bf;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 0px 1px 0.25px #ff52bf;
+          box-shadow: 0px 0px 1px 0.25px #ff52bf;
+  padding: 5px 15px;
+  color: #ff52bf;
+  font-size: 1.2rem;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.header__title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #00252e;
+  padding: 0 10px;
+  margin-top: 150px;
+  margin-bottom: 20px;
+  font-size: 3rem;
+}
+
+.header__text {
+  font-family: "Open Sans", sans-serif;
+  color: #00252e;
+  line-height: 2.3rem;
+  font-size: 1.6rem;
+  padding: 0 15px;
+  margin-bottom: 50px;
+  font-weight: 400;
+}
+
+.header__btn {
+  display: block;
+  width: 70%;
+  padding: 10px 0px;
+  border-radius: 50px;
+  border: none;
+  -webkit-box-shadow: 0px 5px 10px 1px #ddd;
+          box-shadow: 0px 5px 10px 1px #ddd;
+  background-color: #ff52bf;
+  margin: 0 auto;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.header__screens {
+  display: block;
+  width: 90%;
+  max-width: 600px;
+  margin: 100px auto;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 50px auto;
+}
+
+.cards__smallIcon {
+  display: block;
+  width: 30px;
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+  margin: 5px auto;
+}
+
+.cards__stats {
+  font-size: 5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #00252e;
+}
+
+.cards__statsText {
+  font-family: "Open Sans", sans-serif;
+  color: #00252e;
+  line-height: 2.3rem;
+  font-size: 1.5rem;
+  margin: 10px 0px;
+}
+
+.growTogether {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #f5faff;
+}
+
+.growTogether:nth-child(2) {
+  background-color: #fff;
+  padding: 100px 0px;
+}
+
+.growTogether__img {
+  display: block;
+  width: 90%;
+  margin: 0px auto;
+  padding-top: 75px;
+  max-width: 600px;
+}
+
+.growTogether__title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #00252e;
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 100px 0px 20px 0px;
+}
+
+.growTogether__text {
+  font-family: "Open Sans", sans-serif;
+  color: #00252e;
+  line-height: 2.3rem;
+  font-size: 1.5rem;
+  text-align: center;
+  padding-bottom: 75px;
+  padding: 0px 15px 75px 15px;
+}
+
+.curves {
+  background-color: #fff;
+  width: 100%;
+}
+
+.getStart {
+  padding: 75px 0px 200px 0px;
+}
+
+.getStart__title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #00252e;
+  text-align: center;
+  margin: 35px 50px;
+  font-size: 2.5rem;
+}
+
+.getStart__btn {
+  display: block;
+  width: 70%;
+  padding: 10px 0px;
+  border-radius: 50px;
+  border: none;
+  -webkit-box-shadow: 0px 5px 10px 1px #ddd;
+          box-shadow: 0px 5px 10px 1px #ddd;
+  background-color: #ff52bf;
+  margin: 0 auto;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5rem;
+  color: #fff;
+  width: 60%;
+  margin-bottom: 55px;
+}
+
+.footer {
+  background-color: #00252e;
+}
+
+.footer__title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #00252e;
+  color: #f5faff;
+  padding: 55px 15px 10px 15px;
+  text-transform: uppercase;
+  font-size: 1.9rem;
+}
+
+.footer__text {
+  font-family: "Open Sans", sans-serif;
+  color: #00252e;
+  line-height: 2.3rem;
+  color: #f5faff;
+  padding: 10px 15px;
+  font-size: 1.45rem;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.footer__contact {
+  color: #f5faff;
+}
+
+.footer__logoWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px auto 0px 15px;
+}
+
+.footer__logoText {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #00252e;
+  color: #f5faff;
+  font-size: 3.5rem;
+  margin-left: 7.5px;
+  letter-spacing: 1px;
+}
+
+.footer__logo {
+  display: block;
+  width: 35px;
+  height: 35px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.footer__contactWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0px 15px;
+}
+
+.footer__contact {
+  font-family: "Open Sans", sans-serif;
+  color: #00252e;
+  line-height: 2.3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #f5faff;
+  font-size: 1.45rem;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  margin: 10px 0px;
+}
+
+.footer__contactImg {
+  width: 20px;
+  margin-right: 20px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.footer__socialMedia {
+  padding: 45px 15px;
+}
+
+.footer__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__input {
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  margin: 25px 15px 15px 15px;
+}
+
+.footer__btn {
+  display: block;
+  width: 70%;
+  padding: 10px 0px;
+  border-radius: 50px;
+  border: none;
+  -webkit-box-shadow: 0px 5px 10px 1px #ddd;
+          box-shadow: 0px 5px 10px 1px #ddd;
+  background-color: #ff52bf;
+  margin: 0 auto;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5rem;
+  color: #fff;
+  width: 40%;
+  border-radius: 5px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin: 0 15px 80px auto;
+}
+
+.fab {
+  color: #f5faff;
+  font-size: 30px;
+  margin-right: 15px;
+}
+/*# sourceMappingURL=style.css.map */

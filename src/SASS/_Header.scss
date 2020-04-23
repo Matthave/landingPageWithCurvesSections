@@ -1,0 +1,49 @@
+.header{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  &__title{
+    @include headings;
+    padding: 0 10px;
+    margin-top:150px;
+    margin-bottom: 20px;
+    font-size: 3rem;
+  }
+  &__text{
+    @include defaultText;
+    font-size: 1.6rem;
+    padding: 0 15px;
+    margin-bottom: 50px;
+    font-weight: 400;
+  }
+  &__btn{
+    @include pinkBtn;
+  }
+  &__screens{
+    display: block;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto;
+  }
+ }
+
+ .cards{
+   display: flex;
+   flex-direction: column;
+   margin: 50px auto;
+   &__smallIcon{
+    display: block;
+    width: 30px;
+    transform: translateX(-50px);
+    margin: 5px auto;
+   }
+   &__stats{
+       font-size: 5rem;
+       @include headings;
+   }
+   &__statsText{
+      @include defaultText;
+      font-size: 1.5rem;
+      margin: 10px 0px;
+   }
+ }
