@@ -18,6 +18,8 @@ html {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 10px;
+  max-width: 1024x;
+  margin: 0 auto;
 }
 
 @media (min-width: 800px) {
@@ -28,7 +30,7 @@ html {
 
 @media (min-width: 1024px) {
   .nav {
-    padding: 15px 175px;
+    padding: 30px 175px;
   }
 }
 

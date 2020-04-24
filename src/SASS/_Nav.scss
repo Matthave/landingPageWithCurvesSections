@@ -2,11 +2,13 @@
   display: flex;
   justify-content: space-between;
   padding:10px;
+  max-width: 1024x;
+  margin:0 auto;
   @include mq(medium){
     padding: 15px 50px;
   }
   @include mq(large){
-    padding: 15px 175px;
+    padding: 30px 175px;
   }
   &__logo{
     width:125px;
