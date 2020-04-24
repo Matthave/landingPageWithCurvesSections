@@ -3,6 +3,7 @@ import screens from '../images/screen-mockups.svg';
 import communities from '../images/icon-communities.svg';
 import message from '../images/icon-messages.svg';
 
+
 function Header() {
   return (
     <header className='header'>
@@ -13,17 +14,20 @@ function Header() {
       </h3>
       <button className="header__btn">Get Started For Free</button>
       <img className='header__screens' src={screens} alt="" />
-      <div className="cards">
-        <img src={communities} alt="communitiesIcon" className="cards__smallIcon" />
-        <h2 className="cards__stats">1.4k+</h2>
-        <p className="cards__statsText">Communities Formed</p>
+      <div className="header__cardsWrap">
+        <div className="cards">
+          <img src={communities} alt="communitiesIcon" className="cards__smallIcon" />
+          <h2 className="cards__stats">1.4k+</h2>
+          <p className="cards__statsText">Communities Formed</p>
 
+        </div>
+        <div className="cards">
+          <img src={message} alt="messageIcon" className="cards__smallIcon" />
+          <h2 className="cards__stats">2.7m+</h2>
+          <p className="cards__statsText">Messages Sents</p>
+        </div>
       </div>
-      <div className="cards">
-        <img src={message} alt="messageIcon" className="cards__smallIcon" />
-        <h2 className="cards__stats">2.7m+</h2>
-        <p className="cards__statsText">Messages Sents</p>
-      </div>
+
     </header>
   )
 }

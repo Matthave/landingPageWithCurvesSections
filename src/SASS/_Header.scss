@@ -8,6 +8,12 @@
     margin-top:150px;
     margin-bottom: 20px;
     font-size: 3rem;
+    @include mq(medium){
+      font-size: 3.5rem;
+    }
+        @include mq(large){
+      font-size: 4rem;
+    }
   }
   &__text{
     @include defaultText;
@@ -15,15 +21,32 @@
     padding: 0 15px;
     margin-bottom: 50px;
     font-weight: 400;
+    @include mq(medium){
+      font-size: 1.8rem;
+    }
+    @include mq(large){
+      padding: 0px 250px;
+    }
   }
   &__btn{
     @include pinkBtn;
+    @include mq(large){
+      width:300px;
+      padding:20px 0px;
+    }
   }
   &__screens{
     display: block;
     width: 90%;
-    max-width: 600px;
+    max-width: 700px;
     margin: 100px auto;
+  }
+  &__cardsWrap{
+    display: flex;
+    flex-direction: column;
+    @include mq(large){
+      flex-direction: row;
+    }
   }
  }
 
@@ -36,14 +59,23 @@
     width: 30px;
     transform: translateX(-50px);
     margin: 5px auto;
+    @include mq(medium){
+      width: 45px;
+    }
    }
    &__stats{
        font-size: 5rem;
        @include headings;
+       @include mq(medium){
+         font-size: 6rem;
+       }
    }
    &__statsText{
       @include defaultText;
       font-size: 1.5rem;
       margin: 10px 0px;
+      @include mq(medium){
+        font-size: 1.8rem;
+      }
    }
  }

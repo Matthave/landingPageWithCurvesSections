@@ -11,13 +11,23 @@
     width:90%;
     margin: 0px auto;
     padding-top: 75px;
-    max-width: 600px;
+    max-width: 450px;
+    @include mq(large){
+      width: 45vw;
+    }
   }
   &__title{
     @include headings;
     font-size: 2.5rem;
     text-align: center;
     margin: 100px 0px 20px 0px;
+    @include mq(medium){
+      font-size: 3rem;
+    }
+    @include mq(large){
+      text-align: start;
+      padding: 0px 15px 10px 15px;
+    }
   }
   &__text{
     @include defaultText;
@@ -25,6 +35,12 @@
     text-align: center;
     padding-bottom: 75px;
     padding: 0px 15px 75px 15px;
+    @include mq(medium){
+      font-size: 1.8rem;
+    }
+    @include mq(large){
+      text-align: start;
+    }
   }
 }
 
@@ -35,6 +51,9 @@
 
 .getStart{
    padding: 75px 0px 200px 0px;
+   @include mq(large){
+     padding: 125px 0px;
+   }
    
   &__title{
     @include headings;
@@ -46,5 +65,46 @@
    @include pinkBtn;
    width:60%;
    margin-bottom: 55px;
+   @include mq(large){
+     height: 50px;
+     width: 300px;
+   }
+  }
+}
+
+.bodySection__wrapContent{
+  display: flex;
+  flex-direction: column;
+  @include mq(large){
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.bodySection__wrapText{
+  @include mq(large){
+    width: 45vw;
+    align-self: center;
+    margin: 0 auto;
+    max-width: 550px;
+  }
+}
+
+
+.growTogether:nth-child(odd) > .bodySection__wrapContent{
+  @include mq(large){
+    flex-direction: row-reverse;
+  }
+}
+
+.growTogether:nth-child(even) > .bodySection__wrapContent >.bodySection__wrapText > .growTogether__text{
+  @include mq(large){
+    text-align: end;
+  }
+}
+
+.growTogether:nth-child(even) > .bodySection__wrapContent >.bodySection__wrapText > .growTogether__title{
+  @include mq(large){
+    text-align: end;
   }
 }

@@ -13,6 +13,7 @@
 @mixin pinkBtn {
   display: block;
   width:70%;
+  max-width: 350px;
   padding: 10px 0px;
   border-radius: 50px;
   border:none;
@@ -22,6 +23,7 @@
   font-family: $default-font-family;
   font-size: 1.5rem;
   color:#fff;
+  cursor: pointer;
 }
 
 $breakpoints: (
